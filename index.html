@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>કિંગ-સાઈઝ બ્લુપ્રિન્ટ | ૨૫ વીઘા સલ્તનત</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;600;700&display=swap');
+        body { font-family: 'Hind Vadodara', sans-serif; -webkit-tap-highlight-color: transparent; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .grid-cell { transition: all 0.2s ease; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen pb-20">
+
+    <!-- Header Banner -->
+    <header class="bg-gradient-to-r from-emerald-900 via-slate-900 to-amber-950 border-b border-emerald-500/30 p-4 sticky top-0 z-50 backdrop-blur-md bg-opacity-90">
+        <div class="max-w-md mx-auto flex items-center justify-between">
+            <div>
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">સ્વાયત્ત સામ્રાજ્ય</span>
+                <h1 class="text-xl font-bold text-amber-300 flex items-center gap-2">
+                    <i class="fa-solid fa-crown text-amber-400"></i> ૨૫ વીઘા સલ્તનત
+                </h1>
+            </div>
+            <div class="text-right">
+                <span class="inline-block px-2.5 py-1 bg-emerald-500/20 border border-emerald-400/30 rounded-full text-xs font-semibold text-emerald-300">
+                    લક્ષ્ય: ૪૫ વર્ષે આઝાદી
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation Tabs -->
+    <nav class="max-w-md mx-auto px-4 mt-3">
+        <div class="flex space-x-2 overflow-x-auto hide-scrollbar bg-slate-900 p-1.5 rounded-xl border border-slate-800 text-xs font-semibold">
+            <button onclick="switchTab('phases')" id="btn-phases" class="flex-1 min-w-[75px] py-2 px-3 rounded-lg bg-emerald-600 text-white font-bold transition">પડાવો</button>
+            <button onclick="switchTab('map')" id="btn-map" class="flex-1 min-w-[75px] py-2 px-3 rounded-lg text-slate-400 hover:text-white transition">૨૫ વીઘા નકશો</button>
+            <button onclick="switchTab('towers')" id="btn-towers" class="flex-1 min-w-[75px] py-2 px-3 rounded-lg text-slate-400 hover:text-white transition">૬ ટાવર</button>
+            <button onclick="switchTab('energy')" id="btn-energy" class="flex-1 min-w-[75px] py-2 px-3 rounded-lg text-slate-400 hover:text-white transition">ગ્રીડ & ડેમ</button>
+        </div>
+    </nav>
+
+    <!-- TAB 1: ૫ વ્યૂહાત્મક પડાવો -->
+    <main id="tab-phases" class="max-w-md mx-auto px-4 mt-4 space-y-4">
+        
+        <!-- પડાવ ૧ -->
+        <section class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-xl relative overflow-hidden">
+            <div class="absolute -right-3 -top-3 w-16 h-16 bg-blue-500/10 rounded-full blur-xl"></div>
+            <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                <span class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-sm">૧</span>
+                <div>
+                    <h2 class="font-bold text-slate-100 text-sm">પાયો અને પાવર રૂટ (વર્ષ ૧ થી ૩)</h2>
+                    <p class="text-xs text-blue-400">શિક્ષણ વહીવટ, Studymate📚 અને સંબંધો</p>
+                </div>
+            </div>
+            <ul class="text-xs text-slate-300 space-y-2.5 mt-3">
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-graduation-cap text-blue-400 mt-0.5"></i>
+                    <span><strong>કરિયરની સીડી:</strong> CTET ➔ TET-2 ➔ TPEO ➔ DPEO પદ સુધીની વહીવટી સત્તા અને સામાજિક પ્રતિષ્ઠા.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-play text-red-400 mt-0.5"></i>
+                    <span><strong>ડિજિટલ પ્લેટફોર્મ:</strong> Studymate📚 ચેનલને લાખો વિદ્યાર્થીઓનું કેન્દ્ર બનાવી પેસિવ ઇનકમ બેકઅપ ઊભો કરવો.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-handshake text-emerald-400 mt-0.5"></i>
+                    <span><strong>પારિવારિક સમન્વય:</strong> હોદ્દો મેળવ્યા બાદ પપ્પા સાથેના તમામ સંબંધો આદરપૂર્વક મજબૂત કરવા.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- પડાવ ૨ -->
+        <section class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-xl">
+            <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                <span class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">૨</span>
+                <div>
+                    <h2 class="font-bold text-slate-100 text-sm">વનસંપદા & ગ્રીન પેરેડાઇઝ (૨૫ વીઘા)</h2>
+                    <p class="text-xs text-emerald-400">શેઢાનું વાવેતર અને પ્રકૃતિની ગોદ</p>
+                </div>
+            </div>
+            <ul class="text-xs text-slate-300 space-y-2 mt-3">
+                <li>🌲 <strong>પૂર્વ શેઢો:</strong> સાગ અને સીસમનું મૂલ્યવાન ઇમારતી જંગલ.</li>
+                <li>🥭 <strong>પશ્ચિમ શેઢો:</strong> આંબો, જામફળી, ચીકુ અને દાડમનો ફળ-બગીચો.</li>
+                <li>🌸 <strong>પત્ની માટે સ્વર્ગ:</strong> કલાત્મક બગીચો અને વચ્ચે મોટો આરામદાયક હિંચકો.</li>
+                <li>🌿 <strong>ઓર્ગેનિક ખેતી:</strong> સંપૂર્ણ પ્રાકૃતિક અનાજ, કઠોળ, શાકભાજી અને ઔષધિઓ.</li>
+            </ul>
+        </section>
+
+        <!-- પડાવ ૩ -->
+        <section class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-xl">
+            <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                <span class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">૩</span>
+                <div>
+                    <h2 class="font-bold text-slate-100 text-sm">નેક્સ્ટ-જનરેશન એન્જિનિયરિંગ</h2>
+                    <p class="text-xs text-cyan-400">વોટર ડેમ, માઇક્રો-ટ્રેન & પવનચક્કી</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 mt-3 text-xs">
+                <div class="bg-slate-800/60 p-2.5 rounded-xl border border-slate-700">
+                    <span class="text-cyan-400 font-bold block mb-1">૯૦ લાખ લિટર ડેમ</span>
+                    જિયો-મેમ્બ્રેન શીટ + ચારેય શેઢે સર્ક્યુલેશન લૂપ (લીલ મુક્ત).
+                </div>
+                <div class="bg-slate-800/60 p-2.5 rounded-xl border border-slate-700">
+                    <span class="text-amber-400 font-bold block mb-1">Oval માઇક્રો-ટ્રેન</span>
+                    લોખંડના પાટા + ડ્યુઅલ ડબ્બા (ખાતર vs ફૂડ ગ્રેડ).
+                </div>
+            </div>
+        </section>
+
+        <!-- પડાવ ૪ -->
+        <section class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-xl">
+            <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                <span class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm">૪</span>
+                <div>
+                    <h2 class="font-bold text-slate-100 text-sm">આત્મનિર્ભર ડેરી & ગોબર ગેસ ગ્રીડ</h2>
+                    <p class="text-xs text-amber-400">ઝીરો-વેસ્ટ અને મફત ઊર્જા</p>
+                </div>
+            </div>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+                ૧૦-૧૨ ઉચ્ચ નસલની ભેંસો ➔ શુદ્ધ દૂધ, ઘી, માવો ➔ સેન્ટ્રલાઇઝ્ડ ગોબર ગેસ પાઇપલાઇન દ્વારા ૬ એ ૬ ટાવર અને ફાર્મહાઉસમાં આજીવન ફ્રી રસોઈ ગેસ ➔ સ્લરીમાંથી ઉત્કૃષ્ટ સેન્દ્રિય ખાતર.
+            </p>
+        </section>
+
+        <!-- પડાવ ૫ -->
+        <section class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 shadow-xl">
+            <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                <span class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">૫</span>
+                <div>
+                    <h2 class="font-bold text-slate-100 text-sm">હોમ સ્કૂલિંગ & બ્રહ્માંડ પાઠશાળા</h2>
+                    <p class="text-xs text-purple-400">વાસ્તવિક શિક્ષણ અને ૪૫ વર્ષે સફર</p>
+                </div>
+            </div>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+                ગોખણપટ્ટી મુક્ત હોમ સ્કૂલિંગ ➔ ખેતરની ટ્રેન, વિન્ડમિલ, બોટની અને હાઈ-પાવર ટેલિસ્કોપથી બ્રહ્માંડ દર્શન ➔ ૪૫ વર્ષે કસ્ટમ ઇલેક્ટ્રિક બોલેરોમાં પવનચક્કીની બેટરીઓ સાથે મહાબળેશ્વરની સ્વાયત્ત સફર!
+            </p>
+        </section>
+
+    </main>
+
+    <!-- TAB 2: ૨૫ વીઘા ઇન્ટરેક્ટિવ નકશો -->
+    <main id="tab-map" class="max-w-md mx-auto px-4 mt-4 hidden space-y-4">
+        <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800">
+            <div class="flex justify-between items-center mb-2">
+                <h2 class="text-sm font-bold text-amber-300">૨૫ વીઘા સલ્તનત ગ્રીડ લેઆઉટ</h2>
+                <span class="text-[10px] text-slate-400">દિશાઓ મુજબ ગોઠવેલ</span>
+            </div>
+            
+            <!-- Compass Indicator -->
+            <div class="flex justify-between text-[11px] text-slate-400 px-2 py-1 bg-slate-800/50 rounded-lg mb-3">
+                <span>⬆️ ઉત્તર (ડેરી / સ્ટેશન)</span>
+                <span>⬇️ દક્ષિણ (મુખ્ય ફાર્મ હાઉસ)</span>
+            </div>
+
+            <!-- Visual Farm Matrix -->
+            <div class="border-2 border-dashed border-emerald-500/30 rounded-xl p-2 bg-emerald-950/20 relative">
+                <!-- Oval Train Track Graphic Line -->
+                <div class="absolute inset-4 border-2 border-amber-400/30 rounded-[40px] pointer-events-none"></div>
+
+                <div class="grid grid-cols-4 gap-1.5 text-center text-[10px] font-semibold py-2">
+                    <!-- North Boundary -->
+                    <div class="col-span-4 bg-slate-800/80 border border-cyan-500/40 p-2 rounded-lg text-cyan-300">
+                        🚩 ટાવર ૫ | ડેરી ફાર્મ (૧૦-૧૨ ભેંસ) + ગોબર ગેસ પ્લાન્ટ + ટ્રેન અનલોડિંગ
+                    </div>
+
+                    <!-- West (Fruits) vs East (Timber) -->
+                    <div class="col-span-1 bg-amber-900/40 border border-amber-600/30 p-3 rounded-lg flex flex-col justify-between h-44 text-amber-300">
+                        <span>🚩 T-૩</span>
+                        <span class="writing-mode-vertical">પશ્ચિમ શેઢો<br>આંબો/જામફળ</span>
+                        <span>🚩 T-૪</span>
+                    </div>
+
+                    <div class="col-span-2 flex flex-col justify-between py-1 gap-1.5">
+                        <div class="bg-cyan-950/60 border border-cyan-500/40 p-2 rounded-lg text-cyan-200">
+                            🌊 ૯૦ લાખ લિટર ડેમ<br><span class="text-[9px] text-slate-400">જિયો-મેમ્બ્રેન + લૂપ</span>
+                        </div>
+                        <div class="bg-emerald-900/30 border border-emerald-500/30 p-2 rounded-lg text-emerald-300">
+                            🌱 ઓર્ગેનિક મલ્ટીક્રોપ<br><span class="text-[9px] text-slate-400">શાકભાજી & આયુર્વેદિક</span>
+                        </div>
+                        <div class="bg-rose-950/40 border border-rose-500/30 p-1.5 rounded-lg text-rose-300">
+                            🌸 પત્નીનો બગીચો & હિંચકો
+                        </div>
+                    </div>
+
+                    <div class="col-span-1 bg-emerald-900/40 border border-emerald-600/30 p-3 rounded-lg flex flex-col justify-between h-44 text-emerald-300">
+                        <span>🚩 T-૧</span>
+                        <span>પૂર્વ શેઢો<br>સાગ/સીસમ</span>
+                        <span>🚩 T-૨</span>
+                    </div>
+
+                    <!-- South Boundary -->
+                    <div class="col-span-4 bg-slate-800/80 border border-emerald-500/40 p-2 rounded-lg text-emerald-300">
+                        🚩 ટાવર ૬ | મુખ્ય ફાર્મ હાઉસ + પવનચક્કી (વિન્ડમિલ) + ટેલિસ્કોપ ડેક
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3 flex items-center justify-between text-xs text-slate-400 bg-slate-800/40 p-2.5 rounded-xl">
+                <span>🚂 યલો લાઇન: Oval ટ્રેન ટ્રેક</span>
+                <span>🚩 ૬ કમાન્ડ ટાવર્સ</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- TAB 3: ૬ કમાન્ડ ટાવર્સનું નેટવર્ક -->
+    <main id="tab-towers" class="max-w-md mx-auto px-4 mt-4 hidden space-y-3">
+        <div class="bg-slate-900 p-3.5 rounded-xl border border-slate-800 text-xs text-slate-300 mb-2">
+            ℹ️ દરેક ટાવર પર નાનો રૂમ, આરામ કરવાની જગ્યા અને પ્રાથમિક રસોઈ સામાન ઉપલબ્ધ છે. ગોબર ગેસ પાઇપલાઇન દ્વારા ગેસ સીધો પહોંચે છે.
+        </div>
+
+        <!-- 6 Towers Cards -->
+        <div class="grid grid-cols-1 gap-2.5">
+            <div class="bg-slate-900 border-l-4 border-emerald-500 p-3 rounded-xl border border-slate-800 flex justify-between items-center">
+                <div>
+                    <h3 class="font-bold text-sm text-emerald-300">ટાવર ૧ અને ૨ (પૂર્વ શેઢો)</h3>
+                    <p class="text-xs text-slate-400">સાગ અને સીસમના કિંમતી જંગલની સુરક્ષા અને દેખરેખ.</p>
+                </div>
+                <span class="text-xs bg-slate-800 px-2.5 py-1 rounded-lg text-emerald-400">લાકડું</span>
+            </div>
+
+            <div class="bg-slate-900 border-l-4 border-amber-500 p-3 rounded-xl border border-slate-800 flex justify-between items-center">
+                <div>
+                    <h3 class="font-bold text-sm text-amber-300">ટાવર ૩ અને ૪ (પશ્ચિમ શેઢો)</h3>
+                    <p class="text-xs text-slate-400">આંબો, ચીકુ, દાડમ, જામફળીના બગીચા અને લણણી મોનિટરિંગ.</p>
+                </div>
+                <span class="text-xs bg-slate-800 px-2.5 py-1 rounded-lg text-amber-400">ફળો</span>
+            </div>
+
+            <div class="bg-slate-900 border-l-4 border-cyan-500 p-3 rounded-xl border border-slate-800 flex justify-between items-center">
+                <div>
+                    <h3 class="font-bold text-sm text-cyan-300">ટાવર ૫ (ઉત્તર શેઢો)</h3>
+                    <p class="text-xs text-slate-400">ડેરી ફાર્મ, બાયોગેસ પ્લાન્ટ અને ટ્રેન અનલોડિંગ સ્ટેશન કંટ્રોલ.</p>
+                </div>
+                <span class="text-xs bg-slate-800 px-2.5 py-1 rounded-lg text-cyan-400">ડેરી/ટ્રેન</span>
+            </div>
+
+            <div class="bg-slate-900 border-l-4 border-purple-500 p-3 rounded-xl border border-slate-800 flex justify-between items-center">
+                <div>
+                    <h3 class="font-bold text-sm text-purple-300">ટાવર ૬ (દક્ષિણ શેઢો - હેડક્વાર્ટર)</h3>
+                    <p class="text-xs text-slate-400">મુખ્ય ફાર્મ હાઉસ બાજુમાં, સમગ્ર ૨૫ વીઘા સલ્તનત પર ૩૬૦° નજર.</p>
+                </div>
+                <span class="text-xs bg-slate-800 px-2.5 py-1 rounded-lg text-purple-400">મુખ્ય HQ</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- TAB 4: વોટર ગ્રીડ, એનર્જી & કેલ્ક્યુલેટર -->
+    <main id="tab-energy" class="max-w-md mx-auto px-4 mt-4 hidden space-y-4">
+        
+        <!-- Energy & Water Stats -->
+        <div class="grid grid-cols-2 gap-3">
+            <div class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800">
+                <i class="fa-solid fa-water text-cyan-400 text-lg mb-1"></i>
+                <div class="text-lg font-bold text-slate-100">૯૦,૦૦,૦૦૦ L</div>
+                <div class="text-[11px] text-slate-400">જિયો-મેમ્બ્રેન ડેમ ક્ષમતા</div>
+            </div>
+            <div class="bg-slate-900 p-3.5 rounded-2xl border border-slate-800">
+                <i class="fa-solid fa-wind text-teal-400 text-lg mb-1"></i>
+                <div class="text-lg font-bold text-slate-100">૧૦૦% શૂન્ય બિલ</div>
+                <div class="text-[11px] text-slate-400">પવનચક્કી + ૩ ઇન્ડસ્ટ્રિયલ બેટરી</div>
+            </div>
+        </div>
+
+        <!-- ૪૫ વર્ષની સફર: બોલેરો EV ચેકલિસ્ટ -->
+        <div class="bg-gradient-to-br from-slate-900 to-amber-950/40 p-4 rounded-2xl border border-amber-500/30">
+            <div class="flex items-center gap-2 mb-2 text-amber-300 font-bold text-sm">
+                <i class="fa-solid fa-car-side"></i> ૪૫ વર્ષે મહાબળેશ્વર એક્સપિડિશન
+            </div>
+            <div class="space-y-1.5 text-xs text-slate-300">
+                <p>⚡ કસ્ટમ મોડિફાઇડ ઇલેક્ટ્રિક બોલેરો (રાજા & રાણી લક્ઝરી બેડ).</p>
+                <p>🔋 પવનચક્કીની ગ્રીન એનર્જીથી ચાર્જ થયેલ ૩ સ્પેર બેટરીઓ.</p>
+                <p>🛣️ પેટ્રોલ-ડીઝલના ખર્ચ વિના પૂર્ણ આર્થિક આઝાદીની યાત્રા.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom App Navigation Bar -->
+    <footer class="fixed bottom-0 left-0 right-0 bg-slate-900/95 border-t border-slate-800 backdrop-blur-lg py-2.5 z-50">
+        <div class="max-w-md mx-auto flex justify-around text-center text-[10px] text-slate-400">
+            <button onclick="switchTab('phases')" class="hover:text-emerald-400 focus:text-emerald-400 flex flex-col items-center">
+                <i class="fa-solid fa-compass text-base mb-0.5"></i>૫ પડાવો
+            </button>
+            <button onclick="switchTab('map')" class="hover:text-emerald-400 focus:text-emerald-400 flex flex-col items-center">
+                <i class="fa-solid fa-map-location-dot text-base mb-0.5"></i>સલ્તનત મેપ
+            </button>
+            <button onclick="switchTab('towers')" class="hover:text-emerald-400 focus:text-emerald-400 flex flex-col items-center">
+                <i class="fa-solid fa-tower-observation text-base mb-0.5"></i>૬ ટાવર
+            </button>
+            <button onclick="switchTab('energy')" class="hover:text-emerald-400 focus:text-emerald-400 flex flex-col items-center">
+                <i class="fa-solid fa-bolt text-base mb-0.5"></i>ગ્રીડ & ડેમ
+            </button>
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(tabId) {
+            // Hide all tabs
+            ['phases', 'map', 'towers', 'energy'].forEach(id => {
+                document.getElementById('tab-' + id).classList.add('hidden');
+                document.getElementById('btn-' + id)?.classList.remove('bg-emerald-600', 'text-white', 'font-bold');
+                document.getElementById('btn-' + id)?.classList.add('text-slate-400');
+            });
+
+            // Show active tab
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+            const activeBtn = document.getElementById('btn-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-emerald-600', 'text-white', 'font-bold');
+                activeBtn.classList.remove('text-slate-400');
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+                  </html>
+                  
